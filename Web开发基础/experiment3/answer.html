@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="testpage.css">
+<title>answer</title>
+
+</head>
+<body>
+<h1>考试结果：</h1>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+
+    var message = urlParams.get("message111");
+    var time = urlParams.get("timer");
+    var score = urlParams.get("score");
+    var realtime = urlParams.get("realtime");
+
+    document.write(message);
+    //document.write(time);
+    //document.write(score);
+    //document.write(realtime);
+</script>
+
+<p>请在下方输入您的id。</p>
+
+<form name="userinput" action="process.asp" method="post">
+<input type="text" name="username" style="height: 28px; width: 240px;">
+<input type="submit" value="提交" style="height: 28px; width: 60px; font-size: 20px;">
+<input type="hidden" name="TIME">
+<input type="hidden" name="SCORE">
+<input type="hidden" name="REALTIME">
+
+<script>
+    document.userinput.TIME.value = time;
+    document.userinput.SCORE.value = score;
+    document.userinput.REALTIME.value = realtime;
+</script>
+
+</form>
+
+</body>
+</html>

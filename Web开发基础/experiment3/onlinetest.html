@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="testpage.css">
+<script src="testpage.js"></script>
+<title>myonlinetestpage</title>
+</head>
+
+<body>
+
+<div id="header">
+    <h1>地理测试题</h1>
+</div>
+
+<div id="time">
+    <p id="hour"></p>
+    <p id="datetime"></p>
+</div>
+
+<br>
+<b><div id="timer">计时器</div></b>
+<br>
+
+<script>
+    var h = document.getElementById("hour");
+    h.innerHTML = bonjour();
+    setInterval("getD1();",1000);
+</script>
+
+<br><br>
+<p style="text-align: center;">本测试为近年部分地理高考题改编题，包括单选，多选，判断对错等题型。满分为20分。</p>
+
+<br><br>
+
+<form id = "test">
+
+<br>
+
+<div name="singlechoice">
+
+<h4>一、单选题：每道题有多个小题，每小题有四个选项，请选择其中最佳的一项。每小题选对得2分，选错或不选得0分。</h4>
+<p>1、汞是一种易挥发的重金属元素，大气汞主要以气态形式存在。
+南岭周边省区是我国重要的有色金属冶炼企业分区。
+在南岭国家森林公园某山顶附近监测得知，该地大气汞含量日变化明显，最高值在午后出现；秋冬季比夏春季大气汞含量高且变幅大。
+据此完成下面两小题。</p>
+
+<p>(1)导致该地大气汞含量在午后出现最高值的原因是午后(    )</p>
+
+<p>①对流雨多发 ②谷风环流较强 ③植被蒸腾较弱 ④地面蒸发旺盛</p>
+
+<label>
+    <input type="radio" name="sinchoix1" value="false">
+    A. ①②
+</label>
+<label>
+    <input type="radio" name="sinchoix1" value="false">
+    B. ①③
+</label>       
+<label>
+    <input type="radio" name="sinchoix1" value="true">
+    C.②④
+</label>     
+<label>
+    <input type="radio" name="sinchoix1" value="false">
+    D.③④
+</label>
+<br>
+
+<br>
+
+<p>(2)该地秋冬季比夏春季大气汞含量变幅大，原因可能是秋冬季(    )</p>
+
+<label>
+    <input type="radio" name="sinchoix2" value="false">
+    A.土壤汞排放量更多
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix2" value="true">
+    B.南下冷空气更频繁
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix2" value="false">
+    C.准静止锋更加强盛
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix2" value="false">
+    D.植被的覆盖度更低
+</label>
+<br>
+
+<br>
+
+<p>2、河床纵剖面是指由河源至河口的河床最低点的连线剖面。
+青藏高原东南部的帕隆藏布江某段河床纵剖面呈阶梯状形态;近几十年来，在该河段有湖泊发育。图2示意该段河床纵剖面形态。
+据此完成下面两小题。</p>
+
+<img src="choix2.png" title="第二题" alt="第二题" style="width: 480px;height: 290px;">
+
+<p>(1)第I段河床纵剖面阶梯状形态形成的自然原因是(    )</p>
+
+<label>
+    <input type="radio" name="sinchoix3" value="false">
+    A.地质构造差异抬升
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix3" value="false">
+    B.河流的阶段性下切
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix3" value="false">
+    C.原始河床地形差异
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix3" value="true">
+    D.滑坡、泥石流作用
+</label>
+<br>
+
+<p>(2)在第II段河床，纵剖面①→②→③的发育过程反映该段河床(    )</p>
+
+<label>
+    <input type="radio" name="sinchoix4" value="true">
+    A.淤积大于侵蚀
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix4" value="false">
+    B.侵蚀大于淤积
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix4" value="false">
+    C.侵蚀-淤积平衡
+</label>
+<br>
+<label>
+    <input type="radio" name="sinchoix4" value="false">
+    D.持续不断侵蚀
+</label>
+<br>
+
+<br><br>
+
+</div>
+
+<div name="multiplechoice">
+
+<h4>二、多选题：每道题有多个选项，请选出其中多个正确选项。全部选对得4分，部分选对得2分，错选或不选得0分。</h4>
+<p>3、某研究统计了50°N以北地区1979- 2016 年发生的所有气旋，并将中心气压值最低的前5%的气旋定义为超强气旋。
+    图3示意该地区1979- -2016 年超强气旋总频数空间分布。据此完成下一小题</p>
+<img src="choix3.png" title="第三题" alt="第三题" style="width:480px;height:404px;">
+<p>影响图中北大西洋地区超强气旋生成的气压带、风带主要是(    )</p>
+<label>
+    <input type="checkbox" name="mulchoix1" value="true">
+    A.副极地低气压带
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix1" value="false">
+    B.副热带高气压带
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix1" value="true">
+    C.极地东风带
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix1" value="true">
+    D.盛行西风带
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix1" value="false">
+    E.东北信风带
+</label>
+<br>
+
+<br>
+
+<p>4、我国某特大城市一老旧厂区经过近十年的改造，于2006年被评为 国家最佳文化创意产业园。
+    2008年以来，该产业园又持续转型为文创旅游空间，大众游客替代文创从业者和爱好者成为消费的主要群体。
+    下图示意2008- -2019年该产业园功能分区演化。据图完成下一小题</p>
+<img src="choix4.png" title="第四题" alt="第四题" style="width: 478px;height: 240px;">
+<p>图示的功能分区演化对该产业园带来的影响是(    )</p>
+<label>
+    <input type="checkbox" name="mulchoix2" value="true">
+    A.土地租金上涨
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix2" value="false">
+    B.商业规模缩小
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix2" value="false">
+    C.消费群体减少
+</label>
+<br>
+<label>
+    <input type="checkbox" name="mulchoix2" value="true">
+    D.文创功能收缩
+</label>
+<br>
+
+<br>
+
+</div>
+
+<br><br>
+
+<div name="TFquestion">
+
+<h4>三、判断题：每道题有多个小题，每个小题有正确和错误两个选项，请在你认为正确的选项后的下拉列表中选择“正确”，认为错误的选项后的下拉列表中选择“错误”。
+每道小题选对得1分，选错或不选得0分。</h4>
+<p>5、下图反映国内某城市群15个城市1990 -2018年城市建设用地规模及排序的变动情况。据此完成下面4道小题</p>
+<img src="choix5.png" title="第五题" alt="第五题" style="width: 480px;height: 340px;"><br>
+<p>影响各城市建设用地规模变化的主要因素是</p>
+
+(1)人口规模
+<select name="TFquestion1">
+    <option value="none">请选择</option>
+    <option value="true">正确</option>
+    <option value="false">错误</option>
+</select>
+
+<br>
+
+(2)产业发展
+<select name="TFquestion2">
+    <option value="none">请选择</option>
+    <option value="true">正确</option>
+    <option value="false">错误</option>
+</select>
+
+<br>
+
+(3)建成历史
+<select name="TFquestion3">
+    <option value="none">请选择</option>
+    <option value="false">正确</option>
+    <option value="true">错误</option>
+</select>
+
+<br>
+
+(4)生态环境
+<select name="TFquestion4">
+    <option value="none">请选择</option>
+    <option value="false">正确</option>
+    <option value="true">错误</option>
+</select>
+
+<br>
+
+</div>
+
+<br><br><br><br>
+
+<b><p style="text-align: center;">请再次确认是否已经完成全部题目，点击下方提交按钮提交试卷。</p></b>
+
+<input type="submit" value="确认交卷" id="submitbutton" onclick="validateForm()">
+
+</form>
+
+<script>
+    count();
+</script>
+
+<br><br><br><br>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{    
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#header{
+    background-color: lightblue;
+    margin-top: auto;
+}
+
+#time{
+    background-color: gold;
+    float: right;
+    text-align: center;
+    font-weight: bold
+}
+
+#login{
+    font-weight: bold;
+}
+
+#inputplace{
+    font-size: 20px;
+    height: 24px;
+    width: 180px;
+}
+
+#test{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#submitbutton{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    height: 36px;
+    width: 120px;
+}
+
+select{
+    font-size: 18px;;
+    width: 96px;
+    height: 24px;
+}

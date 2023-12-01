@@ -1,0 +1,34 @@
+body{
+    background-image: url("background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+    margin-left: 150px;
+}
+
+h1{
+    text-align: center;
+}
+
+.bigger{
+    font-size: larger;
+}
+
+.highlight{
+    color: yellow;
+}
+
+.classlist{
+    font-size: larger;
+    color: aqua;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {color:aqua;}
+a:link {color:blueviolet;}
+a:hover{text-decoration: underline;}
